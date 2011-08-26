@@ -1,7 +1,7 @@
 define host{
         use                     windows-server
-        host_name               wbrtpusnxtwb01
-        alias                   wbrtpusnxtwb01
-        address                 10.217.17.50
+        host_name               wbrtpusnxtwb02
+        alias                   wbrtpusnxtwb02
+        address                 10.217.18.50
         }
 
