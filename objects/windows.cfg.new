@@ -65,7 +65,8 @@ define hostgroup{
 define service{
 	use			generic-service
 	host_name		wbrtpecxtwb01, wbrtpecxtwb02, wbrtpecxtwb03,\
-				wbrtpusnxtwb01, wbrtpusnxtwb02, wbrtpusnxtwb03
+				wbrtpusnxtwb01, wbrtpusnxtwb02, wbrtpusnxtwb03,\
+				wbrtpusnxtdb01
 	service_description	NSClient++ Version
 	check_command		check_nt!CLIENTVERSION
 	}
@@ -78,7 +79,8 @@ define service{
 define service{
 	use			generic-service
 	host_name		wbrtpecxtwb01, wbrtpecxtwb02, wbrtpecxtwb03,\
-				wbrtpusnxtwb01, wbrtpusnxtwb02, wbrtpusnxtwb03
+				wbrtpusnxtwb01, wbrtpusnxtwb02, wbrtpusnxtwb03,\
+                                wbrtpusnxtdb01
 	service_description	Uptime
 	check_command		check_nt!UPTIME
 	}
@@ -91,7 +93,8 @@ define service{
 define service{
 	use			generic-service
 	host_name		wbrtpecxtwb01, wbrtpecxtwb02, wbrtpecxtwb03,\
-				wbrtpusnxtwb01, wbrtpusnxtwb02, wbrtpusnxtwb03
+				wbrtpusnxtwb01, wbrtpusnxtwb02, wbrtpusnxtwb03,\
+                                wbrtpusnxtdb01
 	service_description	CPU Load
 	check_command		check_nt!CPULOAD!-l 5,80,90
 	}
@@ -104,7 +107,8 @@ define service{
 define service{
 	use			generic-service
 	host_name		wbrtpecxtwb01, wbrtpecxtwb02, wbrtpecxtwb03,\
-				wbrtpusnxtwb01, wbrtpusnxtwb02, wbrtpusnxtwb03
+				wbrtpusnxtwb01, wbrtpusnxtwb02, wbrtpusnxtwb03,\
+                                wbrtpusnxtdb01
 	service_description	Memory Usage
 	check_command		check_nt!MEMUSE!-w 80 -c 90
 	}
@@ -117,7 +121,8 @@ define service{
 define service{
 	use			generic-service
 	host_name		wbrtpecxtwb01, wbrtpecxtwb02, wbrtpecxtwb03,\
-				wbrtpusnxtwb01, wbrtpusnxtwb02, wbrtpusnxtwb03
+				wbrtpusnxtwb01, wbrtpusnxtwb02, wbrtpusnxtwb03,\
+                                wbrtpusnxtdb01
 	service_description	C:\ Drive Space
 	check_command		check_nt!USEDDISKSPACE!-l c -w 80 -c 90
 	}
@@ -128,7 +133,8 @@ define service{
 define service{
         use                     generic-service
         host_name               wbrtpecxtwb01, wbrtpecxtwb02, wbrtpecxtwb03,\
-                                wbrtpusnxtwb01, wbrtpusnxtwb02, wbrtpusnxtwb03
+                                wbrtpusnxtwb01, wbrtpusnxtwb02, wbrtpusnxtwb03,\
+                                wbrtpusnxtdb01
         service_description     E:\ Drive Space
         check_command           check_nt!USEDDISKSPACE!-l e -w 80 -c 90
         }
@@ -140,7 +146,8 @@ define service{
 define service{
 	use			generic-service
 	host_name		wbrtpecxtwb01, wbrtpecxtwb02, wbrtpecxtwb03,\
-				wbrtpusnxtwb01, wbrtpusnxtwb02, wbrtpusnxtwb03
+				wbrtpusnxtwb01, wbrtpusnxtwb02, wbrtpusnxtwb03,\
+                                wbrtpusnxtdb01
 	service_description	W3SVC
 	check_command		check_nt!SERVICESTATE!-d SHOWALL -l W3SVC
 	}
