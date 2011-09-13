@@ -1,0 +1,80 @@
+define host {
+		name				generic-website
+		check_command			check-host-alive
+                notification_interval		15
+                notification_options		d,u,r
+                max_check_attempts		3
+                active_checks_enabled		1
+                notifications_enabled		1
+                check_period			24x7
+                notification_period		24x7
+                contact_groups			admins
+		register			0
+}
+
+define service {
+		name				generic-web-service
+		servicegroups			check_dns
+                check_period                    24x7
+                notification_period             24x7
+                contact_groups                  admins
+                notification_interval           15
+                notification_options            w,u,c,r
+                max_check_attempts              3
+                check_interval                  5
+                retry_interval                  1
+                active_checks_enabled           1
+                passive_checks_enabled          0
+                notifications_enabled           1
+                check_freshness                 0
+                freshness_threshold             86400
+		register			
+
+define host {
+				use						generic-website
+                host_name	            www.puritan.jp
+                alias					www.puritan.jp
+                address					12.238.253.101
+				_SQLKEY					JPMAGE09152008
+}
+
+define host {
+		use					generic-website
+                host_name				www.detuinen.nl
+                alias					www.detuinen.nl
+                address					12.238.253.106
+		_SQLKEY					JPMAGE09152008
+}
+
+define host {
+		use					generic-website
+                host_name				www.hollandandbarrett.com
+                alias					www.hollandandbarrett.com
+                address					12.238.253.103
+		_SQLKEY					HB18903204
+}
+
+define host {
+		use					generic-website
+                host_name				www.hollandandbarrett.ie
+                alias					www.hollandandbarrett.ie
+                address					12.238.253.105
+		_SQLKEY					HB18903204
+}
+
+define service {
+		use					generic-web-service
+                service_description                     HTTP
+                check_command                           check_http! -H $HOSTNAME$ -A $_HOSTSQLKEY$
+                host_name                               www.hollandandbarrett.com, www.hollandandbarrett.ie, www.puritan.jp, \
+						        www.detuinen.nl
+}
+
+define service {
+		use					generic-web-service
+                service_description                     DNS
+                check_command                           check_dns
+                host_name                               www.hollandandbarrett.com, www.hollandandbarrett.ie, www.puritan.jp, \
+						        www.detuinen.nl
+}
+
