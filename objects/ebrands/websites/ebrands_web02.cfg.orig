@@ -8,7 +8,6 @@ define host {
                 alias                           www.americanhealthus.com.wb02
                 address                         10.217.18.51
                 _SQLKEY                         AH4862871
-		_HEADER				www.americanhealthus.com
 }
 
 define host {
@@ -16,8 +15,7 @@ define host {
                 host_name                       app.solgar.com.wb02
                 alias                           app.solgar.com.wb02
                 address                         10.217.18.52                 
-                _SQLKEY                         Solgar            
-                _HEADER				app.solgar.com
+                _SQLKEY                         Solgar
 }
 
 define host {
@@ -26,7 +24,6 @@ define host {
                 alias                           www.bodyfortress.com.wb02
                 address                         10.217.18.53                         
                 _SQLKEY                         BF5458841
-                _HEADER				www.bodyfortress.com
 }
 
 define host {
@@ -35,8 +32,6 @@ define host {
                 alias                           www.body-supreme.co.uk.wb02
                 address                         10.217.18.54                         
                 _SQLKEY                         BSUK8438741
-                _HEADER				www.body-supreme.co.uk
-
 }
 
 define host {
@@ -45,7 +40,6 @@ define host {
                 alias                           www.capsuleworks.com.wb02
                 address                         10.217.18.55                         
                 _SQLKEY                         CW7367343
-                _HEADER				www.capsuleworks.com
 }
 
 define host {
@@ -54,7 +48,6 @@ define host {
                 alias                           www.ester-c.ca.wb02
                 address                         10.217.18.57                         
                 _SQLKEY                         ECCA3537411
-                _HEADER				www.ester-c.ca
 }
 
 define host {
@@ -63,7 +56,6 @@ define host {
                 alias                           www.ester-c.com.wb02
                 address                         10.217.18.56                         
                 _SQLKEY                         EC8855641
-                _HEADER				www.ester-c.com
 }
 
 define host {
@@ -72,7 +64,6 @@ define host {
                 alias                           www.flexamin.com.wb02
                 address                         10.217.18.58                         
                 _SQLKEY                         FL3558432
-                _HEADER				www.flexamin.com
 }
 
 define host {
@@ -81,7 +72,6 @@ define host {
                 alias                           www.goodnnatural.com.wb02
                 address                         10.217.18.59                         
                 _SQLKEY                         GN2013743
-                _HEADER				www.goodnnatural.com
 }
 
 define host {
@@ -90,7 +80,6 @@ define host {
                 alias                           www.homehealthus.com.wb02
                 address                         10.217.18.60                         
                 _SQLKEY                         HH2599166
-                _HEADER				www.homehealthus.com
 }
 
 define host {
@@ -99,7 +88,6 @@ define host {
                 alias                           www.knox.com.wb02
                 address                         10.217.18.61                         
                 _SQLKEY                         UA-1859759-9
-                _HEADER				www.knox.com
 }
 
 define host {
@@ -108,7 +96,6 @@ define host {
                 alias                           www.lenaturiste.com.wb02
                 address                         10.217.18.62                         
                 _SQLKEY                         Lenaturiste
-                _HEADER				www.lenaturiste.com
 }
 
 define host {
@@ -117,7 +104,6 @@ define host {
                 alias                           www.metrx.co.uk.wb02
                 address                         10.217.18.63                         
                 _SQLKEY                         MXUK5803647
-                _HEADER				www.metrx.co.uk
 }
 
 define host {
@@ -126,7 +112,6 @@ define host {
                 alias                           www.naturalwealth.com.wb02
                 address                         10.217.18.64                         
                 _SQLKEY                         NW5965707
-                _HEADER				www.naturalwealth.com
 }
 
 define host {
@@ -135,7 +120,6 @@ define host {
                 alias                           www.naturesbounty.ca.wb02
                 address                         10.217.18.66                         
                 _SQLKEY                         NBC4571063
-                _HEADER				www.naturesbounty.ca
 }
 
 define host {
@@ -144,7 +128,6 @@ define host {
                 alias                           www.naturesbounty.com.wb02
                 address                         10.217.18.65                         
                 _SQLKEY                         NB3465068
-                _HEADER				www.naturesbounty.com
 }
 
 define host {
@@ -153,7 +136,6 @@ define host {
                 alias                           www.nbtyhelpinghands.com.wb02
                 address                         10.217.18.67                         
                 _SQLKEY                         NBHH6503074
-                _HEADER				www.nbtyhelpinghands.com
 }
 
 define host {
@@ -162,7 +144,6 @@ define host {
                 alias                           www.neurops.com.wb02
                 address                         10.217.18.68                         
                 _SQLKEY                         NO8240904
-                _HEADER				www.neurops.com
 }
 
 define host {
@@ -171,7 +152,6 @@ define host {
                 alias                           www.nutritionfocus.org.wb02
                 address                         10.217.18.69                         
                 _SQLKEY                         nutritionfocus
-                _HEADER				www.nutritionfocus.org
 }
 
 define host {
@@ -180,7 +160,6 @@ define host {
                 alias                           www.omni-pak.com.wb02
                 address                         10.217.18.70                         
                 _SQLKEY                         OP4313020
-                _HEADER				ww.omni-pak.com
 }
 
 define host {
@@ -189,7 +168,6 @@ define host {
                 alias                           www.osteobiflex.ca.wb02
                 address                         10.217.18.72                         
                 _SQLKEY                         OBCA2756020
-                _HEADER				www.osteobiflex.ca
 }
 
 define host {
@@ -198,7 +176,6 @@ define host {
                 alias                           www.osteobiflex.com.wb02
                 address                         10.217.18.71                         
                 _SQLKEY                         OB1094669
-                _HEADER				www.osteobiflex.com
 }
 
 define host {
@@ -207,7 +184,6 @@ define host {
                 alias                           www.osteobiflex.co.uk.wb02
                 address                         10.217.18.73                         
                 _SQLKEY                         OBUK5515827
-                _HEADER				www.osteobiflex.co.uk
 }
 
 define host {
@@ -216,7 +192,6 @@ define host {
                 alias                           www.pureprotein.net.wb02
                 address                         10.217.18.74                         
                 _SQLKEY                         MR4855427
-                _HEADER				www.pureprotein.net
 }
 
 define host {
@@ -225,7 +200,6 @@ define host {
                 alias                           www.radiancevitamins.com.wb02
                 address                         10.217.18.75                         
                 _SQLKEY                         RV6707866
-                _HEADER				www.radiancevitamins.com
 }
 
 define host {
@@ -234,7 +208,6 @@ define host {
                 alias                           www.skatewiththegreats.com.wb02
                 address                         10.217.18.76                         
                 _SQLKEY                         SGMX5700208
-                _HEADER				www.skatewiththegreats.com
 }
 
 define host {
@@ -243,7 +216,6 @@ define host {
                 alias                           www.solgar.com.wb02
                 address                         10.217.18.77                         
                 _SQLKEY                         SG4770689
-                _HEADER				www.solgar.com
 }
 
 define host {
@@ -252,7 +224,6 @@ define host {
                 alias                           www.sportnutrition.com.wb02
                 address                         10.217.18.78                         
                 _SQLKEY                         WW1701777
-                _HEADER				www.sportnutrition.com
 }
 
 define host {
@@ -261,7 +232,6 @@ define host {
                 alias                           www.sundownnaturals.com.wb02
                 address                         10.217.18.79                         
                 _SQLKEY                         RF4904918
-                _HEADER				www.sundownnaturals.com
 }
 
 define host {
@@ -270,7 +240,6 @@ define host {
                 alias                           uk.solgar.com.wb02
                 address                         10.217.18.80                         
                 _SQLKEY                         SGUK841765
-                _HEADER				uk.solgar.com
 }
 
 #####################################################################
@@ -280,7 +249,7 @@ define host {
 define service {
 		use				generic-web-service
                 service_description             HTTP
-                check_command                   check_http! -H $_HOSTHEADER$ -A $_HOSTSQLKEY$
+                check_command                   check_http! -H $HOSTNAME$ -A $_HOSTSQLKEY$
                 host_name                       www.americanhealthus.com.wb02,\
                                                 app.solgar.com.wb02,\
                                                 www.bodyfortress.com.wb02,\
