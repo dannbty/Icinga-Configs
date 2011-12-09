@@ -1,0 +1,52 @@
+#####################################################################
+#####                            USN                            #####
+#####################################################################
+
+define host {
+                use                             generic-website
+                host_name                       ssvcs.nbty.com
+                alias                           ssvcs.nbty.com
+                address                         213.62.84.190
+                _SQLKEY                         WASHost
+                _HEADER                         ssvcs.nbty.com
+}
+
+define host {
+                use                             generic-website
+                host_name                       ssvcs.nbty.com.wb01
+                alias                           ssvcs.nbty.com.wb01
+                address                         10.217.17.101
+                _SQLKEY                         WASHost
+                _HEADER                         ssvcs.nbty.com
+}
+
+define host {
+                use                             generic-website
+                host_name                       ssvcs.nbty.com.wb02
+                alias                           ssvcs.nbty.com.wb02
+                address                         10.217.18.101
+                _SQLKEY                         WASHost
+                _HEADER                         ssvcs.nbty.com
+}
+
+define service {
+                use                             generic-web-service
+                service_description             HTTP
+                check_command                   check_http! -H $_HOSTHEADER$ -A $_HOSTSQLKEY$ -u /WasHost/StoreLocatorDataService.svc/
+                host_name                       ssvcs.nbty.com
+}
+
+define service {
+                use                             generic-web-service
+                service_description             HTTP
+                check_command                   check_http! -H $_HOSTHEADER$ -A $_HOSTSQLKEY$ -u /WasHost/StoreLocatorDataService.svc/
+                host_name                       ssvcs.nbty.com.wb01
+}
+
+define service {
+                use                             generic-web-service
+                service_description             HTTP
+                check_command                   check_http! -H $_HOSTHEADER$ -A $_HOSTSQLKEY$ -u /WasHost/StoreLocatorDataService.svc/
+                host_name                       ssvcs.nbty.com.wb02
+}
+
